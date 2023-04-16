@@ -1,0 +1,86 @@
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 30px;
+}
+
+
+  /* Styles for screens from 501px to 750px wide */
+  @media (min-width: 501px) and (max-width: 750px) {
+    .grid-container{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Styles for screens from 751px to 999px wide */
+  @media (min-width: 751px) and (max-width: 999px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  /* Styles for screens wider than 1000px */
+  @media (min-width: 1000px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+
+
+.thumbnail{
+    width:100%;
+}
+
+.video-title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-channel,.video-views{
+    font-size: 12px;
+    color:rgb(96,96,96);
+    font-weight: 400;
+}
+
+.video-channel{
+    margin-bottom: 5px;
+}
+
+
+
+
+.vertical-2{
+    display:grid;
+    grid-template-columns: 50px 1fr;
+}
+
+
+
+.profile{
+  width: 36px;
+  border-radius: 25px;
+}
+
+
+
+.vertical-1{
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.video-time{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 4px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 8px;
+    right:5px;
+    background-color: black;
+    color: white;
+}
